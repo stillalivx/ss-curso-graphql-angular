@@ -1,0 +1,12 @@
+# Información de los autores
+type People {
+  id: ID!
+  name: String!
+  email: String!
+  website: String
+  github: String
+  twitter: String
+  books: [String!]!
+  # Libros que ha coprado esta persona
+  booksBuy: [Book]
+}

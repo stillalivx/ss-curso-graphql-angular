@@ -1,0 +1,17 @@
+
+"""
+Vamos a trabajar para obtener información de todos los usuarios registradosm
+implementar el acceso con las credenciales y obtener la información mediante JWT
+"""
+type Query {
+  "Lista de usuarios de la base de datos"
+  users: [User!]!
+  "Inicio de sesión con nuestras credenciales"
+  login(
+    "Email del usuario registrado en la base de datos"
+    email: String!,
+    "Password asociada a un usuario para introducir las credenciales"
+    password: String
+  ): Result!
+  me: Result!
+}

@@ -1,0 +1,6 @@
+type Mutation {
+  "Registrar usuarios en la base de datos"
+  add(user: UserInput!): ResultUser!
+  "Modificar información del usuario seleccionado"
+  update(user: UserInput!): ResultUser!
+}
